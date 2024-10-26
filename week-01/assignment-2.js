@@ -16,7 +16,7 @@ function findHashWithPrefix(prefix) {
     let input = 0;
     while (true) {
         // can you guess what we need to add ??
-        let inputStr;   // you need to change here
+        let inputStr = "100xdevs" + input.toString();   // you need to change here
         let hash = crypto.createHash('sha256').update(inputStr).digest('hex');
         if (hash.startsWith(prefix)) {
             return { input: inputStr, hash: hash };

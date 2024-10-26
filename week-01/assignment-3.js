@@ -13,7 +13,7 @@ Output Hash: 00000780594bad6a25d5a240f9a3a399521979f1b320cd13658fe1232bf2d688
 function findHashWithPrefix(prefix) {
   let input = 0;
   while (true) {
-    let inputStr; // change here to solve the assignment
+    let inputStr = "harkirat => Raman | Rs 100 Ram => Ankit | Rs 101935085" + input.toString() // change here to solve the assignment
     let hash = crypto.createHash("sha256").update(inputStr).digest("hex");
     if (hash.startsWith(prefix)) {
       return { input: inputStr, hash: hash };
